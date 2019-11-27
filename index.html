@@ -1,0 +1,97 @@
+
+<html>
+	<head>
+			<title>Expense List </title>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="theme-color" content="white"/>
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="theme-color" content="white"/>  
+<meta name="apple-mobile-web-app-capable" content="yes">  
+<meta name="apple-mobile-web-app-status-bar-style" content="black"> 
+<meta name="apple-mobile-web-app-title" content="Hello World"> 
+<meta name="msapplication-TileImage" content="images/hello-icon-144.png">  
+<meta name="msapplication-TileColor" content="#FFFFFF">
+		<link rel="icon" href="favicon.ico" type="image/x-icon" />  
+		<link rel="apple-touch-icon" href="images/hello-icon-152.png">   
+
+		<link rel="manifest" href="/manifest.json">
+
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+			integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+			crossorigin="anonymous"
+        />
+        <script  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+		<script
+			defer
+			src="https://use.fontawesome.com/releases/v5.7.2/js/all.js"
+			integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP"
+			crossorigin="anonymous"
+        ></script>
+    
+	</head>
+
+	<body>
+		<nav class="navbar navbar-dark bg-dark">
+			<span class="navbar-brand mb-0 h1">Xpers</span>
+			<span class="navbar-brand mb-0 h1" id="headingTotal"></span>
+		</nav>
+		<div class="container-fluid bg-light" style="min-height: 100vh">
+			<div class="container">
+				<div class="jumbotron mt-4">
+					<div class="input-group mb-3">
+						<input
+							type="number"
+							class="form-control"
+							id="inputAmount"
+							placeholder="Amount spent"
+							aria-label="Amount spent"
+							aria-describedby="spent in rupee"
+						/>
+						<div class="input-group-append">
+							<span class="input-group-text" id="spent in rupee">Rs</span>
+						</div>
+					</div>
+					<div class="input-group mb-3">
+						<div class="input-group-prepend">
+							<span class="input-group-text" id="spent at">@</span>
+						</div>
+						<input
+							type="text"
+							class="form-control"
+							id="inputDesc"
+							placeholder="spent On"
+							aria-label="spent On"
+							aria-describedby="spent at"
+						/>
+						<div class="input-group-append">
+							<button class="btn btn-outline-primary" type="button" id="btnAddExpense">Add</button>
+						</div>
+					</div>
+                </div>
+                
+                <div>
+                    <ul class="list-unstyled ">
+                        <li><h4 class="text-info text-center ">Your Expenses here</h4></li>
+                        <hr>
+                        </ul>
+                </div>
+              
+
+				<div>
+                    <ul class="list-group" id="expenseTable"></ul>
+                  
+                  
+				</div>
+			</div>
+		</div>
+	<script src="js/script.js" ></script>
+	<script src="js/main.js" ></script>
+    </body>
+</html>
